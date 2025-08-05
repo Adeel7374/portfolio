@@ -7,13 +7,13 @@ import Button from '../ui/Button';
 
 const Hero: React.FC = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:adeel@example.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/Adeel7374', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-adeel-b99181186?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:mianadee25@example.com', label: 'Email' },
   ];
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           {/* Greeting */}
@@ -23,8 +23,8 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="mb-4"
           >
-            <span className="text-blue-600 font-medium">
-              Hello, I'm
+            <span className="text-blue-400 font-medium">
+              Hello, I&apos;m
             </span>
           </motion.div>
 
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6"
           >
             Muhammad Adeel
           </motion.h1>
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-8"
+            className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8"
           >
             Mobile Application Developer
           </motion.h2>
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-lg text-gray-600 max-w-2xl mx-auto mb-8"
+            className="text-lg text-gray-400 max-w-2xl mx-auto mb-8"
           >
             Passionate Mobile Application Developer with 3+ years of experience in Flutter, 
             Native Android, and React Native. Specializing in crafting visually appealing 
@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}

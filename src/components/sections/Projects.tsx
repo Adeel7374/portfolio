@@ -82,7 +82,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="projects" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -91,11 +91,11 @@ const Projects: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             My Projects
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Here are some of the projects I've worked on. Each project represents 
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            Here are some of the projects I&apos;ve worked on. Each project represents 
             my passion for creating innovative and user-friendly applications.
           </p>
         </motion.div>
@@ -112,8 +112,8 @@ const Projects: React.FC = () => {
               <Card className="h-full">
                 {/* Project Image */}
                 <div className="relative mb-4">
-                  <div className="w-full h-48 bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30 rounded-lg flex items-center justify-center">
-                    <Smartphone className="w-16 h-16 text-blue-600 dark:text-blue-400" />
+                  <div className="w-full h-48 bg-gradient-to-br from-blue-900/30 to-indigo-900/30 rounded-lg flex items-center justify-center">
+                    <Smartphone className="w-16 h-16 text-blue-400" />
                   </div>
                   <div className="absolute top-2 right-2">
                     <span className="px-2 py-1 bg-blue-600 text-white text-xs rounded-full">
@@ -124,10 +124,10 @@ const Projects: React.FC = () => {
 
                 {/* Project Content */}
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  <h3 className="text-xl font-bold text-white mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">
+                  <p className="text-gray-300 mb-4 line-clamp-3">
                     {project.description}
                   </p>
 
@@ -136,7 +136,7 @@ const Projects: React.FC = () => {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded"
+                        className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded"
                       >
                         {tech}
                       </span>

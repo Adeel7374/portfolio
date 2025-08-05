@@ -3,24 +3,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { User, Code, Smartphone, Award } from 'lucide-react';
-import Card from '../ui/Card';
 
 const About: React.FC = () => {
   const stats = [
     { icon: User, label: 'Years Experience', value: '3+' },
     { icon: Code, label: 'Projects Completed', value: '50+' },
-    { icon: Smartphone, label: 'Apps Developed', value: '25+' },
+    { icon: Smartphone, label: 'Apps Developed', value: '30+' },
     { icon: Award, label: 'Client Satisfaction', value: '100%' },
   ];
 
   const skills = [
-    'Flutter', 'Dart', 'React Native', 'JavaScript', 'TypeScript',
+    'Flutter', 'Dart', 'Ads Integration', 'In-App-Purchases', 'XCode', 'Getx', 'Provider', 'RiverPod', 'JavaScript', 'TypeScript',
     'Android Development', 'iOS Development', 'Firebase', 'REST APIs',
-    'Git', 'Agile/Scrum', 'UI/UX Design'
+    'Git', 'Github', 'Gitlab', 'UI/UX Design', 'Google Play Console', 'App Store Connect'
   ];
 
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-900">
+    <section id="about" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,11 +28,11 @@ const About: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             About Me
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            I'm a passionate Mobile Application Developer with expertise in creating 
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            I&apos;m a passionate Mobile Application Developer with expertise in creating 
             innovative and user-friendly mobile applications.
           </p>
         </motion.div>
@@ -46,14 +45,14 @@ const About: React.FC = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            <h3 className="text-2xl font-bold text-white mb-6">
               Who I Am
             </h3>
-            <div className="space-y-4 text-gray-600 dark:text-gray-400">
+            <div className="space-y-4 text-gray-300">
               <p>
-                I'm a dedicated Mobile Application Developer with over 3 years of experience 
+                I&apos;m a dedicated Mobile Application Developer with over 3 years of experience 
                 in the mobile development industry. My journey began with a passion for 
-                creating apps that make a difference in people's lives.
+                creating apps that make a difference in people&apos;s lives.
               </p>
               <p>
                 I specialize in Flutter, React Native, and Native Android development, 
@@ -62,7 +61,7 @@ const About: React.FC = () => {
                 platforms, ensuring cross-platform compatibility and optimal user experience.
               </p>
               <p>
-                When I'm not coding, you can find me exploring new technologies, 
+                When I&apos;m not coding, you can find me exploring new technologies, 
                 contributing to open-source projects, or sharing knowledge with the 
                 developer community.
               </p>
@@ -86,13 +85,13 @@ const About: React.FC = () => {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="bg-blue-100 dark:bg-blue-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <stat.icon className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+                <div className="bg-blue-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <stat.icon className="w-8 h-8 text-blue-400" />
                 </div>
-                <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
+                <div className="text-2xl font-bold text-white mb-1">
                   {stat.value}
                 </div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">
+                <div className="text-sm text-gray-400">
                   {stat.label}
                 </div>
               </motion.div>
@@ -107,7 +106,7 @@ const About: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+          <h3 className="text-2xl font-bold text-white mb-8 text-center">
             Skills & Technologies
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
@@ -118,7 +117,7 @@ const About: React.FC = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
                 viewport={{ once: true }}
-                className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-200"
+                className="px-4 py-2 bg-gray-800 text-gray-300 rounded-full text-sm font-medium hover:bg-blue-900/30 hover:text-blue-400 transition-colors duration-200"
               >
                 {skill}
               </motion.span>
